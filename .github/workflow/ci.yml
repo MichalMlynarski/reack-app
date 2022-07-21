@@ -1,7 +1,8 @@
 name: CI
 on:
   pull_request:
-    branches: [workflow]
+    branches: 
+      - develop
 
 jobs:
   build:
