@@ -26,6 +26,6 @@ jobs:
         if: github.event_name == 'push'
         run: npx surge --project ./build --domain alleged-burn.surge.sh
         env:
-          SURGE_LOGIN: ${{ secrete.SURGE_LOGIN }}
-          SURGE_TOKEN: ${{ secrete.SURGE_TOKEN }}
-          
+          SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+
