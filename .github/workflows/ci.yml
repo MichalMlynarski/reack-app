@@ -16,7 +16,7 @@ jobs:
           path: ~/.npm
           key: ${{ rinner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-key: |
-            ${{ rinner.os }}-node-
+            ${{ runner.os }}-node-
       - name: Use NodeJS
         uses: actions/setup-node@v1
         with:
