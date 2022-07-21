@@ -28,3 +28,4 @@ jobs:
         env:
           SURGE_LOGIN: ${{ secrete.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrete.SURGE_TOKEN }}
+          
